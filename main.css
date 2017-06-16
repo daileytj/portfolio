@@ -134,6 +134,28 @@ nav li a, .middle-dot{
   font-size : 1.4rem;
 }
 
+/*.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}*/
+
 .thomas-dailey {
   color     : #00bcd4;
   font-size : 3.4rem;
@@ -186,7 +208,7 @@ nav li a, .middle-dot{
 }
 
 .down-arrow{
-  margin-top: 125px;
+  margin-top: 145px;
   margin-bottom: 40px;
   color: #e91e63;
   text-shadow: 2.5px 2.5px 2.5px #e91e63;
@@ -204,14 +226,7 @@ nav li a, .middle-dot{
   background-color : black;
 }
 
-/*-------------------------------------------------------------
-
-----------------------------SKILLS-----------------------------
-
--------------------------------------------------------------*/
-
-
-#skills-section{
+.main-content-wrapper{
   height                : auto;
   background-image      : url("./images/black-texture-background.jpg");
   background-repeat     : no-repeat;
@@ -220,45 +235,6 @@ nav li a, .middle-dot{
   background-size       : cover;
 }
 
-.skills-section-inner{
-  width:90%;
-  margin: 0 auto;
-  padding: 20px 0;
-}
-
-#skills-section h2{
-  color: #e91e63;
-  text-shadow: 2.5px 2.5px 2.5px #e91e63;
-  margin: 10px auto 50px auto;
-}
-
-#skills-section h3{
-  text-align: center;
-  margin: 10px auto;
-  color: #00bcd4;
-  text-shadow: 1.5px 1.5px 1.5px #00bcd4;
-}
-
-.skill-section-group {
-    display: inline-block;
-    width: 49%;
-    vertical-align: top;
-    margin-bottom: 50px;
-}
-
-.skill {
-    width: 90%;
-    background-color: white;
-    border: 1px solid #00bcd4;
-    box-shadow: 1px 1px 1px #00bcd4;
-    margin: 5px auto;
-    border-radius: 10px;
-    padding: 5px;
-    font-weight: 300;
-}
-
-
-
 /*-------------------------------------------------------------
 
 --------------------------PROJECTS-----------------------------
@@ -266,14 +242,14 @@ nav li a, .middle-dot{
 -------------------------------------------------------------*/
 
 
-#projects-section{
+/*#projects-section{
   height                : auto;
   background-image      : url("./images/purple-bg.jpg");
   background-repeat     : no-repeat;
   background-attachment : fixed;
   background-position   : center;
   background-size       : cover;
-}
+}*/
 
 .projects-section-inner{
   width:90%;
@@ -281,15 +257,18 @@ nav li a, .middle-dot{
   padding: 20px 0;
 }
 
-#projects-section h2{
-  color: #e91e63;
-  text-shadow: 2.5px 2.5px 2.5px #e91e63;
-  margin: 10px auto 50px auto;
+#projects-section h2, #about-me-section h2, #skills-section h2 {
+    font-size: 1.8rem;
+    color: #e91e63;
+    text-shadow: 2.5px 2.5px 2.5px #e91e63;
+    margin: 20px auto 50px auto;
+    text-align: center;
 }
 
-#projects-section h3{
+#projects-section h3, #skills-section h3{
+  font-size: 1.4rem;
   text-align: center;
-  margin: 10px auto 30px auto;
+  margin: 15px auto 30px auto;
   color: #00bcd4;
   text-shadow: 1.5px 1.5px 1.5px #00bcd4;
 }
@@ -328,9 +307,13 @@ img.project-screenshot {
     display: inline-block;
     width: 49%;
     padding: 0px 10px;
-    color: #9E9E9E;
+    color: #ffffff;
     font-weight: 300;
     vertical-align: top;
+}
+
+p.project-technologies-used {
+    margin-top: 1rem;
 }
 
 /*-------------------------------------------------------------
@@ -340,26 +323,29 @@ img.project-screenshot {
 -------------------------------------------------------------*/
 
 
-#about-me-section{
+/*#about-me-section{
   height                : auto;
   background-image      : url("./images/nothing-forest-bg.jpg");
   background-repeat     : no-repeat;
   background-attachment : fixed;
   background-position   : center;
   background-size       : cover;
-}
+}*/
 
 .about-me-section-inner{
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   padding: 20px 0;
   color: #FFFFFF;
 }
 
-#about-me-section h2{
-  color: #e91e63;
-  text-shadow: 2.5px 2.5px 2.5px #e91e63;
-  margin: 10px auto 50px auto;
+img.headshot {
+    display: block;
+    margin: 0 auto 30px auto;
+    width: 30%;
+    height: auto;
+    border-radius: 100%;
+    border: 5px solid #9E9E9E;
 }
 
 .about-me-section-inner p {
@@ -381,7 +367,7 @@ iframe {
 }
 
 .contact-section {
-    margin: 20px auto;
+    margin: 50px auto 0 auto;
     text-align: center;
 }
 
@@ -392,6 +378,76 @@ iframe {
     height: 10%;
 }
 
+.about-me-links svg:hover{
+  cursor: pointer;
+}
+
+.linkedin-profile-link svg:hover{
+  fill: #0077B5;
+}
+
+.github-profile-link svg:hover{
+  fill: #000000;
+}
+
+.facebook-profile-link svg:hover{
+  fill: #3b5998;
+}
+
+.email-link svg:hover{
+  fill: #dd4b39;
+}
+
+
+
+/*-------------------------------------------------------------
+
+----------------------------SKILLS-----------------------------
+
+-------------------------------------------------------------*/
+
+
+/*#skills-section{
+  height                : auto;
+  background-image      : url("./images/black-texture-background.jpg");
+  background-repeat     : no-repeat;
+  background-attachment : fixed;
+  background-position   : center;
+  background-size       : cover;
+}*/
+
+.skills-section-inner{
+  background-color: rgba(255, 255, 255, 0.25);
+  width:90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.skill-section-group {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+
+.skill-section-group img {
+    display: inline-block;
+    width: 22%;
+    height: auto;
+    margin: 20px;
+    float: left;
+}
+
+/*.skill {
+    width: 90%;
+    background-color: white;
+    border: 1px solid #00bcd4;
+    box-shadow: 1px 1px 1px #00bcd4;
+    margin: 5px auto;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: 300;
+}*/
 
 /*-------------------------------------------------------------
 
@@ -400,6 +456,7 @@ iframe {
 -------------------------------------------------------------*/
 
 footer {
+    color: white;
     width: 100%;
     text-align: center;
     padding: 10px;
