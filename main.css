@@ -472,4 +472,8 @@ footer {
   .about-me-links svg{
     width:20%;
   }
+
+  .hero, .main-content-wrapper{
+    background-attachment: scroll !important;
+  }
 }
