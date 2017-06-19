@@ -289,7 +289,7 @@ img.project-screenshot {
     width: 100%;
 }
 
-.project-left-wrapper button a{
+.project-left-wrapper a{
   text-decoration: none;
   color: white;
   font-size: .8rem;
@@ -301,7 +301,14 @@ img.project-screenshot {
     border-radius: 5px;
     margin: 10px;
     background-color: #2196F3;
-    border-color: #1565C0
+    border-color: #1565C0;
+    color:white;
+}
+
+.live-demo-button:hover, .source-code-button:hover{
+  transform: translate(2px 2px);
+  background-color: #1565C0;
+  cursor: pointer;
 }
 
 .project-description {
@@ -471,6 +478,14 @@ footer {
     width:100%;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .project-description{
+    margin-top: 10px;
+  }
+
+  .live-demo-button ,.source-code-button{
+    margin-top: 20px;
   }
 
   .about-me-section-inner{
