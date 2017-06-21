@@ -10,7 +10,7 @@ $(document).ready(function(){
 
   $(function(){
   		$(".typed-out-1").typed({
-        strings: ["^2000 Full-Stack Developer"],
+        strings: ["^2000 Front-End Developer"],
         typeSpeed: 50,
         showCursor: false,
         callback: function(){

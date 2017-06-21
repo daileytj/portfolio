@@ -177,7 +177,7 @@ nav li a, .middle-dot{
   font-weight: normal;
 }
 
-.full-stack-developer {
+.front-end-developer {
   color : #db42f5;
 
 }
@@ -190,7 +190,7 @@ nav li a, .middle-dot{
   color : #2196f3;
 }
 
-.full-stack-developer, .problem-solver, .apprentice{
+.front-end-developer, .problem-solver, .apprentice{
   padding-top: 1rem;
   padding-left: .5rem;
   text-shadow: 1.5px 1.5px 1.5px;
